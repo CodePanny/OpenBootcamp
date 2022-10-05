@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 400px;
+    min-width: 250px;
+    display: flex;
+}
+
+
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 5px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+
+}
+
+@media (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+        min-height: 200px;
+    }
+
+    .side {
+        flex-direction: row;
+        margin: 0;
+    }
+}
